@@ -33,7 +33,7 @@ public class PauseMenu : MonoBehaviour
     }
 
     //Pause the whole scene (timeScale 0)
-    void Pause()
+    public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
