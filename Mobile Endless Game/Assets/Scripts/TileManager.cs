@@ -57,6 +57,7 @@ public class TileManager : MonoBehaviour
             go = Instantiate(tilePrefabs[prefabIndex]) as GameObject;
         }
 
+        //Spawn new tiles as a child of a parent
         go.transform.SetParent(transform);
         //Spawn new tile at the end of the last spawn
         go.transform.position = Vector3.forward * spawnZ;
