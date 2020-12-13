@@ -7,11 +7,11 @@ public class TileManager : MonoBehaviour
     //Creates an Array of GameObjects
     public GameObject[] tilePrefabs;
     private Transform playerTransform;
-    private float spawnZ = -33.3f;
-    private float tileLength = 33.3f;
+    private float spawnZ = -15f;
+    private float tileLength = 15f;
     public int tilesOnScreen = 8;
     //Distanta parcusa de player ca sa nu fie distrusa platforma de sub picioarele sale
-    private float safeZone = 33.3f;
+    private float safeZone = 15f;
     //Tine evidenta la toate tile-urile ca sa distruga ultimul tile
     private List<GameObject> activeTiles;
     private int lastPrefabIndex = 0;
