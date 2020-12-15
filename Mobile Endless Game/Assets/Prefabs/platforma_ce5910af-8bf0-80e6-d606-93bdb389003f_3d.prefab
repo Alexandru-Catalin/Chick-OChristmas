@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cadou_621bb73a-92ad-ecff-ffd0-a975a7e7111c_3d
       objectReference: {fileID: 0}
+    - target: {fileID: 2801609755998089730, guid: 5791f304da2c7914d88c515cf5a8e595, type: 3}
+      propertyPath: m_TagString
+      value: Object
+      objectReference: {fileID: 0}
     - target: {fileID: 3566152559101966852, guid: 5791f304da2c7914d88c515cf5a8e595, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.4000006

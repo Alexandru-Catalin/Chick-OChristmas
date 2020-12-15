@@ -5,11 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour
 {
+    public static bool GameIsPaused = false;
+    public GameObject deathMenuUI;
+
     void OnTriggerEnter(Collider hit)
     {
-        if (hit.gameObject.tag == "Player")
+        if (hit.gameObject.tag == "Object")
         {
-            SceneManager.LoadScene(0);
+            deathMenuUI.SetActive(true);
+            Time.timeScale = 0f;
+            GameIsPaused = true;
         }
     }
 }

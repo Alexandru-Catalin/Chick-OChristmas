@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     private float score = 0f;
-    public Text scoreText;
+    private float deathScore = 0f;
+    public Text scoreText, death;
     public int difficultyLevel = 1;
     public int maxDifficultyLevel = 100;
     public int scoreToNextLevel = 10;
@@ -19,7 +20,9 @@ public class Score : MonoBehaviour
         }
 
         score += Time.deltaTime * difficultyLevel;
+        deathScore += Time.deltaTime * difficultyLevel;
         scoreText.text = ((int)score).ToString();
+        death.text = ((int)deathScore).ToString();
     }
 
     public void LevelUp()

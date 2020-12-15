@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     //Load scene
     public void PlayGame()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(1);
     }
 
