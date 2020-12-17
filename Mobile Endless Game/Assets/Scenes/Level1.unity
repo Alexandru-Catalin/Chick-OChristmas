@@ -25,20 +25,20 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubtractiveShadowColor: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 67fba831c41354f4494524ca080e1b15, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
+  m_DefaultReflectionResolution: 2048
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.8149416, g: 0.8252615, b: 0.88355917, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1056,13 +1056,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: gainav2_0892da06-5f5e-b5a0-f4e6-a426b5bf5a6f_3d_Var3
       objectReference: {fileID: 0}
-    - target: {fileID: 6912925538582829511, guid: ee7b58d0f2fdaba4d8b3816f56a12ca9, type: 3}
-      propertyPath: m_LocalPosition.x
+    - target: {fileID: 383989557504687483, guid: ee7b58d0f2fdaba4d8b3816f56a12ca9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 659768009906974392, guid: ee7b58d0f2fdaba4d8b3816f56a12ca9, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912925538582829511, guid: ee7b58d0f2fdaba4d8b3816f56a12ca9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.051
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912925538582829511, guid: ee7b58d0f2fdaba4d8b3816f56a12ca9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6912925538582829511, guid: ee7b58d0f2fdaba4d8b3816f56a12ca9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1098,6 +1106,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6912925538582829511, guid: ee7b58d0f2fdaba4d8b3816f56a12ca9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453632790221076487, guid: ee7b58d0f2fdaba4d8b3816f56a12ca9, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1668,17 +1680,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1301086962}
     m_Modifications:
+    - target: {fileID: 1307832230815530905, guid: 11ee7d4e56ecd074dbf2ebfefc4b3b4d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4058299886969607647, guid: 11ee7d4e56ecd074dbf2ebfefc4b3b4d, type: 3}
       propertyPath: m_Name
       value: gainav2_0892da06-5f5e-b5a0-f4e6-a426b5bf5a6f_3d_Var1
       objectReference: {fileID: 0}
+    - target: {fileID: 4058299886969607647, guid: 11ee7d4e56ecd074dbf2ebfefc4b3b4d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433523248595768249, guid: 11ee7d4e56ecd074dbf2ebfefc4b3b4d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433523248595768249, guid: 11ee7d4e56ecd074dbf2ebfefc4b3b4d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.484
+      objectReference: {fileID: 0}
     - target: {fileID: 6024508994233263877, guid: 11ee7d4e56ecd074dbf2ebfefc4b3b4d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.004
       objectReference: {fileID: 0}
     - target: {fileID: 6024508994233263877, guid: 11ee7d4e56ecd074dbf2ebfefc4b3b4d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6024508994233263877, guid: 11ee7d4e56ecd074dbf2ebfefc4b3b4d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1714,6 +1742,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6024508994233263877, guid: 11ee7d4e56ecd074dbf2ebfefc4b3b4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7231927076433079333, guid: 11ee7d4e56ecd074dbf2ebfefc4b3b4d, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2034,7 +2066,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1301086962
 Transform:
@@ -2521,6 +2553,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1301086962}
     m_Modifications:
+    - target: {fileID: 1349949707531398091, guid: 6f56392b883c744499c009e660247331, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346408825132956367, guid: 6f56392b883c744499c009e660247331, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4768023251565975298, guid: 6f56392b883c744499c009e660247331, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.054
@@ -2568,6 +2608,10 @@ PrefabInstance:
     - target: {fileID: 7677753352538030008, guid: 6f56392b883c744499c009e660247331, type: 3}
       propertyPath: m_Name
       value: gainav2_0892da06-5f5e-b5a0-f4e6-a426b5bf5a6f_3d_Var2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7677753352538030008, guid: 6f56392b883c744499c009e660247331, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f56392b883c744499c009e660247331, type: 3}
