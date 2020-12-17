@@ -22,14 +22,14 @@ public class Swipe : MonoBehaviour
         Vector3 pos = gameObject.transform.position;
         if (!line.Equals(targetLine))
         {
-            if(targetLine == 0 && pos.x < -2)
+            if (targetLine == 0 && pos.x < -4)
             {
-                gameObject.transform.position = new Vector3(-2f, 1.4f, pos.z);
+                gameObject.transform.position = new Vector3(-4f, 1.4f, pos.z);
                 line = targetLine;
                 canMove = true;
                 movec.x = 0;
             }
-            else if(targetLine == 1 && (pos.x>0 || pos.x < 0))
+            else if (targetLine == 1 && (pos.x > 0 || pos.x < 0))
             {
                 if (line == 0 && pos.x > 0)
                 {
@@ -38,7 +38,7 @@ public class Swipe : MonoBehaviour
                     canMove = true;
                     movec.x = 0;
                 }
-                else if(line == 2 && pos.x < 0)
+                else if (line == 2 && pos.x < 0)
                 {
                     gameObject.transform.position = new Vector3(0, 1.4f, pos.z);
                     line = targetLine;
@@ -46,9 +46,9 @@ public class Swipe : MonoBehaviour
                     movec.x = 0;
                 }
             }
-            else if(targetLine == 2 && pos.x > 2)
+            else if (targetLine == 2 && pos.x > 4)
             {
-                gameObject.transform.position = new Vector3(2f, 1.4f
+                gameObject.transform.position = new Vector3(4f, 1.4f
                     , pos.z);
                 line = targetLine;
                 canMove = true;
