@@ -54,6 +54,7 @@ public class Swipe : MonoBehaviour
                 movec.x = 0;
             }
         }
+
         CheckInputs();
         cc.Move(movec * Time.deltaTime);
         speed += 0.4f * Time.deltaTime;
@@ -64,14 +65,14 @@ public class Swipe : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.LeftArrow) && canMove && line > 0)
             {
                 targetLine--;
-                canMove = false;
-                movec.x = -4;
+                canMove = true;
+                movec.x = -40;
             }
             if (Input.GetKeyDown(KeyCode.RightArrow) && canMove && line < 2)
             {
                 targetLine++;
-                canMove = false;
-                movec.x = 4;
+                canMove = true;
+                movec.x = 40;
             }
         }
     }

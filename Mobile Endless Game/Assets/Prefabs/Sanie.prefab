@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &2653909221200957225
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520436795974111355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020929774, y: 0.061899945, z: 0.022072697}
+  m_Center: {x: -0.0000000011920929, y: -0.0042417976, z: 0.0008483839}
 --- !u!1 &2653909220859498180
 GameObject:
   m_ObjectHideFlags: 0
@@ -53,6 +66,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
+  death: {fileID: 0}
   difficultyLevel: 1
   maxDifficultyLevel: 100
   scoreToNextLevel: 10
@@ -103,19 +117,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &2653909221200957225
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1520436795974111355}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.020929774, y: 0.061899945, z: 0.022072697}
-  m_Center: {x: -0.0000000011920929, y: -0.0042417976, z: 0.0008483839}
 --- !u!1001 &2653909221153502891
 PrefabInstance:
   m_ObjectHideFlags: 0
