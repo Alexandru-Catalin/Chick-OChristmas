@@ -31,14 +31,14 @@ public class Swipe : MonoBehaviour
             }
             else if (targetLine == 1 && (pos.x > 0 || pos.x < 0))
             {
-                if (line == 0 && pos.x >= 0)
+                if (line == 0 && pos.x > 0)
                 {
                     gameObject.transform.position = new Vector3(0, 1.4f, pos.z);
                     line = targetLine;
                     canMove = true;
                     movec.x = 0;
                 }
-                else if (line == 2 && pos.x <= 0)
+                else if (line == 2 && pos.x < 0)
                 {
                     gameObject.transform.position = new Vector3(0, 1.4f, pos.z);
                     line = targetLine;
