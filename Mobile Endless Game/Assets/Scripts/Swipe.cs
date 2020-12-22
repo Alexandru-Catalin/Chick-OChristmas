@@ -22,7 +22,7 @@ public class Swipe : MonoBehaviour
         Vector3 pos = gameObject.transform.position;
         if (!line.Equals(targetLine))
         {
-            if (targetLine == 0 && pos.x <= -4)
+            if (targetLine == 0 && pos.x < -4)
             {
                 gameObject.transform.position = new Vector3(-4f, 1.4f, pos.z);
                 line = targetLine;
@@ -46,7 +46,7 @@ public class Swipe : MonoBehaviour
                     movec.x = 0;
                 }
             }
-            else if (targetLine == 2 && pos.x >= 4)
+            else if (targetLine == 2 && pos.x > 4)
             {
                 gameObject.transform.position = new Vector3(4f, 1.4f, pos.z);
                 line = targetLine;

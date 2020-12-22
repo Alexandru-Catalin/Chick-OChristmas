@@ -1360,6 +1360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bradv2_53f6545f-ff24-24b1-69af-94bd6be1754e_3d (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3417645509278954967, guid: 53f00b8279c4ad441b3e4d84dd566875, type: 3}
+      propertyPath: m_TagString
+      value: Object
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53f00b8279c4ad441b3e4d84dd566875, type: 3}
 --- !u!4 &4872762999808635902 stripped
