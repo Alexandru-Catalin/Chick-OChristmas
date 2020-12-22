@@ -1540,6 +1540,7 @@ MonoBehaviour:
   - {fileID: 3817440800266811587, guid: 0315d4c0f47afb049bcb4941eb1f54e1, type: 3}
   - {fileID: 1718619040717792935, guid: 6aaad0ee0137c0d42ac2f15c8e2c4409, type: 3}
   - {fileID: 1813187261499047147, guid: de8d8e848d3b9eb43984026b43935c79, type: 3}
+  - {fileID: 5632999611965459565, guid: f4ba30859df74ce4f9e2850e6b5b4c80, type: 3}
   tilesOnScreen: 12
 --- !u!4 &1369237529
 Transform:
