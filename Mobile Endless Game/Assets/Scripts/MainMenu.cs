@@ -6,11 +6,8 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-
     public GameObject loadingScreen;
-    public Slider slider;
 
-    //Load scene
     public void PlayGame(int sceneIndex)
     {
         Time.timeScale = 1f;
@@ -20,14 +17,14 @@ public class MainMenu : MonoBehaviour
     IEnumerator LoadAsynchronously (int sceneIndex)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+        Time.timeScale = 1f;
 
         loadingScreen.SetActive(true);
 
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / .9f);
-            slider.value = progress;
-
+            Time.timeScale = 1f;
             yield return null;
         }
     }

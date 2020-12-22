@@ -59,21 +59,20 @@ public class Swipe : MonoBehaviour
         cc.Move(movec * Time.deltaTime);
         speed += 0.4f * Time.deltaTime;
         transform.position += transform.forward * speed * Time.deltaTime;
-      
-        void CheckInputs()
+    }
+    void CheckInputs()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && canMove && line > 0)
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow) && canMove && line > 0)
-            {
-                targetLine--;
-                canMove = true;
-                movec.x = -40;
-            }
-            if (Input.GetKeyDown(KeyCode.RightArrow) && canMove && line < 2)
-            {
-                targetLine++;
-                canMove = true;
-                movec.x = 40;
-            }
+            targetLine--;
+            canMove = true;
+            movec.x = -40;
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow) && canMove && line < 2)
+        {
+            targetLine++;
+            canMove = true;
+            movec.x = 40;
         }
     }
 

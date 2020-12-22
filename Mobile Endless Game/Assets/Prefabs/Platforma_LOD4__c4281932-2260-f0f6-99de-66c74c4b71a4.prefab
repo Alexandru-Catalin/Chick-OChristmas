@@ -1222,6 +1222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: boxsageata_cee7de7e-9d1b-a6ed-11bd-71a59ab0b195_3d
       objectReference: {fileID: 0}
+    - target: {fileID: 828377960986117503, guid: 66ca26c3582119f4f9cd6f2d7ef42139, type: 3}
+      propertyPath: m_TagString
+      value: Object
+      objectReference: {fileID: 0}
     - target: {fileID: 1796775932873320550, guid: 66ca26c3582119f4f9cd6f2d7ef42139, type: 3}
       propertyPath: m_ReceiveShadows
       value: 0
@@ -1300,6 +1304,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2058728071124794397}
     m_Modifications:
+    - target: {fileID: 2447037246572310477, guid: 53f00b8279c4ad441b3e4d84dd566875, type: 3}
+      propertyPath: m_TagString
+      value: Object
+      objectReference: {fileID: 0}
     - target: {fileID: 2767227325699038977, guid: 53f00b8279c4ad441b3e4d84dd566875, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0292
