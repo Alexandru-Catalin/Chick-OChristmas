@@ -2,78 +2,61 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public enum SIDE { Left, Mid, Right}
+
 public class Swipe : MonoBehaviour
 {
+    public SIDE m_Side = SIDE.Mid;
+    float NewXPos = 0f;
+    public bool SwipeLeft;
+    public bool SwipeRight;
+    public float XValue;
+    private CharacterController m_char;
     public float speed = 10f;
-    CharacterController cc;
-    bool canMove = true;
-    private int line = 1;
-    private int targetLine = 1;
-    Vector3 movec = Vector3.zero;
-
+    private float x;
     void Start()
     {
-        cc = gameObject.GetComponent<CharacterController>();
+        m_char = GetComponent<CharacterController>();
+        transform.position = Vector3.zero;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Vector3 pos = gameObject.transform.position;
-        if (!line.Equals(targetLine))
-        {
-            if (targetLine == 0 && pos.x < -4)
-            {
-                gameObject.transform.position = new Vector3(-4f, 1.4f, pos.z);
-                line = targetLine;
-                canMove = true;
-                movec.x = 0;
-            }
-            else if (targetLine == 1 && (pos.x > 0 || pos.x < 0))
-            {
-                if (line == 0 && pos.x > 0)
-                {
-                    gameObject.transform.position = new Vector3(0, 1.4f, pos.z);
-                    line = targetLine;
-                    canMove = true;
-                    movec.x = 0;
-                }
-                else if (line == 2 && pos.x < 0)
-                {
-                    gameObject.transform.position = new Vector3(0, 1.4f, pos.z);
-                    line = targetLine;
-                    canMove = true;
-                    movec.x = 0;
-                }
-            }
-            else if (targetLine == 2 && pos.x > 4)
-            {
-                gameObject.transform.position = new Vector3(4f, 1.4f, pos.z);
-                line = targetLine;
-                canMove = true;
-                movec.x = 0;
-            }
-        }
+        SwipeLeft = Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow);
+        SwipeRight = Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow);
 
-        CheckInputs();
-        cc.Move(movec * Time.deltaTime);
+        if (SwipeLeft)
+        {
+            if(m_Side == SIDE.Mid)
+            {
+                NewXPos = -XValue;
+                m_Side = SIDE.Left;
+            }
+            else if(m_Side == SIDE.Right)
+            {
+                NewXPos = 0;
+                m_Side = SIDE.Mid;
+            }
+        }
+        else if (SwipeRight)
+        {
+            if (m_Side == SIDE.Mid)
+            {
+                NewXPos = XValue;
+                m_Side = SIDE.Right;
+            }
+            else if (m_Side == SIDE.Left)
+            {
+                NewXPos = 0;
+                m_Side = SIDE.Mid;
+            }
+        }
+        Vector3 moveVector = new Vector3(x - transform.position.x, transform.position.y, speed * Time.deltaTime);
+        x = Mathf.Lerp(x, NewXPos, Time.deltaTime * speed);
+        m_char.Move(moveVector);
         speed += 0.4f * Time.deltaTime;
-        transform.position += transform.forward * speed * Time.deltaTime;
-    }
-    void CheckInputs()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && canMove && line > 0)
-        {
-            targetLine--;
-            canMove = true;
-            movec.x = -40;
-        }
-        if (Input.GetKeyDown(KeyCode.RightArrow) && canMove && line < 2)
-        {
-            targetLine++;
-            canMove = true;
-            movec.x = 40;
-        }
+        transform.position = new Vector3(transform.position.x, 1.4f, transform.position.z);
     }
 
 }
