@@ -3579,6 +3579,10 @@ PrefabInstance:
       propertyPath: XValue
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2653909220859498203, guid: a0204eabb2b41b448b1ca97c5dc53790, type: 3}
+      propertyPath: speedDodge
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2653909221200957225, guid: a0204eabb2b41b448b1ca97c5dc53790, type: 3}
       propertyPath: m_IsTrigger
       value: 0

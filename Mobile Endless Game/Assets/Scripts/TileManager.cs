@@ -26,6 +26,8 @@ public class TileManager : MonoBehaviour
             if (i < 2)
             {
                 SpawnTile(0);
+                SpawnTile(0);
+                SpawnTile(0);
             }
             else
             {
