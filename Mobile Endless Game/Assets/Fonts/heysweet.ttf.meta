@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4e79f38f03070d44498f48a9e6f8363d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - heysweet
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d6f6f4317478ced4fb2fd52762001b4d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

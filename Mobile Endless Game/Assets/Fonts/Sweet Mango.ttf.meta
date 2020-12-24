@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 053314c43e2b89c4eb81a9f4a5ab299e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Sweet Mango
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c4505374732361845aff78f1180f7224, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
