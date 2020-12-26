@@ -3693,6 +3693,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2564474841841801716, guid: a0204eabb2b41b448b1ca97c5dc53790, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564474841841801716, guid: a0204eabb2b41b448b1ca97c5dc53790, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2653909220859498180, guid: a0204eabb2b41b448b1ca97c5dc53790, type: 3}
       propertyPath: m_Name
       value: Sanie
@@ -3799,7 +3807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2653909220859498203, guid: a0204eabb2b41b448b1ca97c5dc53790, type: 3}
       propertyPath: speedDodge
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2653909221200957225, guid: a0204eabb2b41b448b1ca97c5dc53790, type: 3}
       propertyPath: m_IsTrigger
