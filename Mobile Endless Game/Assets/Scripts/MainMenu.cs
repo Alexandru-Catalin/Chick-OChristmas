@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
     public GameObject loadingScreen;
+    public AudioMixer audioMixer;
 
     public void PlayGame(int sceneIndex)
     {
@@ -27,6 +29,11 @@ public class MainMenu : MonoBehaviour
             Time.timeScale = 1f;
             yield return null;
         }
+    }
+
+    public void SetVolume (float volume)
+    {
+        audioMixer.SetFloat("Volume", volume);
     }
 
     public void QuitGame()
