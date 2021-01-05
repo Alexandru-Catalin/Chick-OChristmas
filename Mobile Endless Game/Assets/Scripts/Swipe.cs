@@ -62,7 +62,7 @@ public class Swipe : MonoBehaviour
         }
 
         //Cross the deadzone?
-        if(swipeDelta.magnitude > 1)
+        if(swipeDelta.magnitude > 50)
         {
             //Direction?
             float dx = swipeDelta.x;
@@ -133,6 +133,7 @@ public class Swipe : MonoBehaviour
                 m_Side = SIDE.Mid;
             }
         }
+
         Vector3 moveVector = new Vector3(x - transform.position.x, transform.position.y, speed * Time.deltaTime);
         x = Mathf.Lerp(x, NewXPos, Time.deltaTime * speedDodge);
         m_char.Move(moveVector);
