@@ -1015,6 +1015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathMenuUI: {fileID: 213644904}
+  player: {fileID: 421058765}
 --- !u!1 &451598198
 GameObject:
   m_ObjectHideFlags: 0
@@ -4977,7 +4978,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1418531633058056721, guid: a0204eabb2b41b448b1ca97c5dc53790, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a0204eabb2b41b448b1ca97c5dc53790, type: 3}
 --- !u!4 &2653909220707931658 stripped
 Transform:
