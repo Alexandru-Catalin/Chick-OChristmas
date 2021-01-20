@@ -8,7 +8,7 @@ using GoogleMobileAds.Api;
 public class AdMobScript : MonoBehaviour
 {
     string APP_ID = "ca-app-pub-2448583680721969~6150719038";
-    string Interstitial_AD_ID = "s";
+    string Interstitial_AD_ID = "ca-app-pub-3940256099942544/1033173712";
     
     private InterstitialAd interstitial;
 
